@@ -59,7 +59,7 @@ jobs:
       # non-zero on any thrown error so the workflow fails loudly
       # instead of uploading an empty history snapshot.
       - name: Run conformance harness (synthetic adapters) 
-        run: node --import tsx apps/daemon/src/critique/fixtures/run-prerelease.ts
+        run: node --import tsx apps/daemon/src/critique/__fixtures__/run-prerelease.ts
 
       - name: Upload history snapshot
         if: always()
